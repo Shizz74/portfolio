@@ -1,0 +1,123 @@
+/*Reser---------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body,
+html{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Kodchasan', sans-serif; 
+}
+
+.unvis {
+    display: none;
+}
+.unvismenu{
+    display: none !important;
+}
+@media only screen and (max-width: 700px) {
+    /*Menu---------------------------------------*/
+    .unvis {
+      display: block;
+    }
+    .unvisNormalMenu {
+        display: none;
+    }
+    .nav,
+    .logo{
+        min-width: 50%;
+        justify-content: center;
+    }
+    .nav-small{
+        width: 100%;
+        text-align: center;
+    }
+    .small-menu{
+        background:#333;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .small-menu li{
+        padding: 1rem 0;
+        
+    }
+    .small-menu a{
+        color: white;
+        text-decoration: none;
+    }
+  }
+/*Small menu-------------------------------------*/
+.btn-menu{
+    width: auto;
+    height: 2rem;
+    padding: 0 1rem;
+    color: white;
+    background: #333;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5%;
+    border: none
+}
+
+/*Navbar style css-------------------------------*/
+.navbar {
+    width:100%;
+    height: 3rem;
+    background: white;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+/*Big menu -------------------------------------*/
+.logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    width: 70%;
+    height: 100%;
+    padding-right: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.navbar li{
+    display: inline;
+    padding-right: 1rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(43, 38, 44);
+}
+.linkhover{
+    background-color: aqua;
+}
+.navbar li a:hover{
+    animation: underline-nav 1.5s;
+    border-bottom: 2px solid green;
+}
+@keyframes underline-nav {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }

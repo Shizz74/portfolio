@@ -1,0 +1,144 @@
+/*Header style css-------------------------------*/
+header{
+    width: 100vw;
+    height: 100vh;
+}
+.portfolio-header {
+    min-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    border: 1rem solid green;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+}
+.circle p{
+    padding: .3rem;
+}
+.name-circle{
+    width: 45vh;
+    height: 45vh;
+    z-index: 4;
+    transform: translate(-9vh, -5vh);
+    animation: name-circle 3s infinite linear;
+}
+.prof-circle{
+    width: 35vh;
+    height: 35vh;
+    z-index: 3;
+    transform: translate(15vh, 17vh);
+    animation: prof-circle 6s infinite linear;
+}
+.circle-small{
+    width: 10vh;
+    height: 10vh;
+    z-index: 1;
+    border: .3rem solid green;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle1{
+    transform: translate(40vh, -15vh);
+}
+.circle2{
+    transform: translate(-30vh, 15vh);
+}
+.circle3{
+    transform: translate(-45vh, -10vh);
+}
+.circle4{
+    transform: translate(-30vh, 30vh);
+}
+
+article{
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+}
+/*Header media ----------------------------------*/
+@media only screen and (max-width: 700px){
+    .circle {
+        border: .8rem solid green;
+    }
+    .name-circle{
+        width: 55vw;
+        height: 55vw;
+        transform: translate(-9vw, -5vw);
+    }
+    .prof-circle{
+        width: 45vw;
+        height: 45vw;
+        transform: translate(15vw, 22vw);
+    }
+    .circle-small{
+        width: 10vw;
+        height: 10vw;
+        border: .3rem solid green;
+    }
+    .circle1{
+        transform: translate(40vw, -30vw);
+    }
+    .circle2{
+        transform: translate(-30vw, 20vw);
+    }
+    .circle3{
+        transform: translate(-40vw, -30vw);
+    }
+    .circle4{
+        transform: translate(-30vw, 40vw);
+    }
+    
+}
+@keyframes name-circle {
+    0% {
+    }
+    25%{
+        
+    }
+    50%{
+        
+    }
+    75%{
+        
+    }
+    100% {
+        
+    }
+  }
+  @keyframes prof-circle {
+    0% {
+        
+    }
+    25%{
+       
+        
+    }
+    50%{
+       
+    }
+    75%{
+        
+        
+    }
+    100% {
+        
+    }
+  }
