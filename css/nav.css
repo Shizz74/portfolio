@@ -1,16 +1,3 @@
-/*Reser---------------------------------------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-}
-body,
-html{
-    width: 100%;
-    overflow-x: hidden;
-    font-family: 'Kodchasan', sans-serif; 
-}
-
 .unvis {
     display: none;
 }
@@ -43,6 +30,7 @@ html{
         width: 100vw;
         height: 100vh;
         z-index: 2;
+        padding-top: 3rem;
     }
     ul{
         list-style-type: none;
@@ -68,6 +56,10 @@ html{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     border-radius: 5%;
     border: none
+}
+.btn-menu:hover{
+    background: green;
+    font-weight: bold;
 }
 
 /*Navbar style css-------------------------------*/
@@ -111,6 +103,9 @@ html{
 }
 .navbar li a:hover{
     animation: underline-nav 1.5s;
+    border-bottom: 2px solid green;
+}
+.navbar li .active{
     border-bottom: 2px solid green;
 }
 @keyframes underline-nav {

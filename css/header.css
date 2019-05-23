@@ -25,6 +25,7 @@ header{
     -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    
 }
 .circle p{
     padding: .3rem;
@@ -34,14 +35,14 @@ header{
     height: 45vh;
     z-index: 4;
     transform: translate(-9vh, -5vh);
-    animation: name-circle 3s infinite linear;
+    animation: name-circle 1s infinite linear;
 }
 .prof-circle{
     width: 35vh;
     height: 35vh;
     z-index: 3;
     transform: translate(15vh, 17vh);
-    animation: prof-circle 6s infinite linear;
+    animation: prof-circle 1s infinite linear;
 }
 .circle-small{
     width: 10vh;
@@ -54,18 +55,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: shake 1s infinite linear;
 }
 .circle1{
-    transform: translate(40vh, -15vh);
+    animation: shake1 .5s infinite linear;
 }
 .circle2{
-    transform: translate(-30vh, 15vh);
+    animation: shake2 0.5s infinite linear;
 }
 .circle3{
-    transform: translate(-45vh, -10vh);
+    animation: shake3 0.5s infinite linear;
 }
 .circle4{
-    transform: translate(-30vh, 30vh);
+    animation: shake4 0.5s infinite linear;
 }
 
 article{
@@ -75,8 +77,15 @@ article{
 }
 /*Header media ----------------------------------*/
 @media only screen and (max-width: 700px){
+    
+/*Circles----------------------------------*/
     .circle {
         border: .8rem solid green;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
     }
     .name-circle{
         width: 55vw;
@@ -92,6 +101,11 @@ article{
         width: 10vw;
         height: 10vw;
         border: .3rem solid green;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
     }
     .circle1{
         transform: translate(40vw, -30vw);
@@ -107,38 +121,83 @@ article{
     }
     
 }
+/*Circles animation----------------------------------*/
+
 @keyframes name-circle {
     0% {
+        transform: scale(1) translate(-9vh, -5vh);
     }
-    25%{
-        
+    20%{
+        transform: scale(1.03) translate(-9vh, -5vh);
     }
-    50%{
-        
+    40%{
+        transform: scale(1) translate(-9vh, -5vh);
     }
-    75%{
-        
+    60%{
+        transform: scale(1.03) translate(-9vh, -5vh);
     }
     100% {
-        
+        transform: scale(1) translate(-9vh, -5vh);
     }
   }
-  @keyframes prof-circle {
+@keyframes prof-circle {
     0% {
-        
+        transform: scale(1) translate(15vh, 17vh);
     }
-    25%{
-       
-        
+    20%{
+        transform: scale(1.03) translate(15vh, 17vh);
     }
-    50%{
-       
+    40%{
+        transform: scale(1) translate(15vh, 17vh);
     }
-    75%{
-        
-        
+    60%{
+        transform: scale(1.03) translate(15vh, 17vh);
     }
     100% {
-        
+        transform: scale(1) translate(15vh, 17vh);
+    }
+  }
+@keyframes shake1 {
+    0% {
+        transform: translate(40vh, -15vh);
+    }
+    50%{
+        transform: translate(41vh, -15vh);
+    }
+    100% {
+        transform: translate(40vh, -15vh);
+    }
+  }
+@keyframes shake2 {
+    0% {
+        transform: translate(-30vh, 15vh);
+    }
+    50%{
+        transform: translate(-29vh, 15vh);
+    }
+    100% {
+        transform: translate(-30vh, 15vh);
+    }
+  }
+@keyframes shake3 {
+        0% {
+            transform: translate(-45vh, -10vh);
+        }
+        50%{
+            transform: translate(-46vh, -10vh);
+        }
+        100% {
+            transform: translate(-45vh, -10vh);
+        }
+  }
+@keyframes shake4 {
+    0% {
+        transform: translate(-30vh, 30vh);
+    }
+    50%{
+        transform: translate(-31vh, 30vh);
+    }
+    100% {
+        transform: translate(-30vh, 30vh);
     }
   }

@@ -1,0 +1,42 @@
+/*Reser---------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/*General---------------------------------------*/
+body,
+html{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Kodchasan', sans-serif; 
+    display: block;
+    margin-left: auto;
+}
+.container{
+    max-width: 1070px;
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/*Section-------------------------------*/
+.section-header{
+    width:100%;
+    height: auto;
+    text-align: center;
+    display: block;
+}
+.section-header p{
+    height: 10rem;
+    font-size: 17rem;
+    color: rgb(0, 0, 0, .05);
+    z-index:1;
+    position: absolute;
+}
+
+section article{
+    display: flex;
+    align-items: center;
+}

@@ -1,16 +1,26 @@
 /*Menu -------------------------------------*/
+
+/*Big-Small-Screen---------------------------*/
 const btnMenu = document.querySelector('.btn-menu');
 const menuSmall = document.querySelector('.small-menu');
-const menuList = document.querySelectorAll('.small-menu li');
-
+const menuSmallList = document.querySelectorAll('.small-menu li');
+const menuBigList = document.querySelectorAll('.big-menu a');
 btnMenu.addEventListener('click', function(){
     menuSmall.classList.toggle('unvismenu');
     btnMenu.classList.toggle('unvismenu');
 });
 
-for(let i = 0; i<menuList.length; i++){
-    menuList[i].addEventListener('click', function(){
+for(let i = 0; i<menuSmallList.length; i++){
+    menuSmallList[i].addEventListener('click', function(){
         menuSmall.classList.toggle('unvismenu');
         btnMenu.classList.toggle('unvismenu');
+    });
+}
+
+/*Active----------------------------------*/
+for(let j = 0; j<menuBigList.length; j++){
+    menuBigList[j].addEventListener('click', function(){
+        document.querySelector('.active').classList.remove('active');
+        menuBigList[j].classList.add('active');
     });
 }
