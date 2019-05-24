@@ -12,6 +12,9 @@
     .unvisNormalMenu {
         display: none;
     }
+    .nav{
+        padding: 0;
+    }
     .nav,
     .logo{
         min-width: 50%;

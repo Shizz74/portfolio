@@ -1,8 +1,8 @@
-/*Reser---------------------------------------*/
+/*Reset---------------------------------------*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 /*General---------------------------------------*/
@@ -11,32 +11,51 @@ html{
     width: 100%;
     overflow-x: hidden;
     font-family: 'Kodchasan', sans-serif; 
-    display: block;
-    margin-left: auto;
 }
 .container{
     max-width: 1070px;
-    height: auto;
     margin-left: auto; 
     margin-right: auto;
+    overflow:hidden;
 }
 
 /*Section-------------------------------*/
-.section-header{
-    width:100%;
+.section-bg p{
     height: auto;
-    text-align: center;
-    display: block;
-}
-.section-header p{
-    height: 10rem;
     font-size: 17rem;
     color: rgb(0, 0, 0, .05);
-    z-index:1;
-    position: absolute;
+    text-align: center;
 }
-
-section article{
+.about {
+    width: 100%;
+    height: auto;
+    min-height: 10rem;
+}
+.section-bg{
+    width: 100%;
+    max-height: 0rem;
+    z-index: -1;
+    
+}
+.section-article{
+    width: 100%;
+    min-height: 20rem;
+    height: auto;
+    z-index: 2;
+    padding: 1rem 0.7rem;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.title {
+    font-size: 3rem;
+    color:rgb(121, 165, 121);
+    text-shadow: 1px 1px 1px #333;
+    padding: 1.5rem 1rem;
+}
+.section-article p{
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
 }
