@@ -24,3 +24,5 @@ for(let j = 0; j<menuBigList.length; j++){
         menuBigList[j].classList.add('active');
     });
 }
+
+fitText(document.querySelector(".big-title"), 0.38);

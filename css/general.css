@@ -22,7 +22,7 @@ html{
 /*Section-------------------------------*/
 .section-bg p{
     height: auto;
-    font-size: 17rem;
+    /*font-size: 17rem;*/
     color: rgb(0, 0, 0, .05);
     text-align: center;
 }
@@ -53,7 +53,7 @@ html{
     font-size: 3rem;
     color:rgb(121, 165, 121);
     text-shadow: 1px 1px 1px #333;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
 }
 .section-article p{
     font-family: Roboto, sans-serif;
