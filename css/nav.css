@@ -27,13 +27,14 @@
     .small-menu{
         background:#333;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 100vw;
         height: 100vh;
         z-index: 2;
         padding-top: 3rem;
+        font-weight: 700;
     }
     ul{
         list-style-type: none;
@@ -76,6 +77,11 @@
     align-items: center;
     position: fixed;
     z-index: 2;
+}
+.menu-body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
 }
 /*Big menu -------------------------------------*/
 .logo{
