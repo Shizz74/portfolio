@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/stack.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Port</title>
   </head>
   <body>
@@ -110,49 +111,66 @@
         </header>
         <article class="section-article">
           <h1 class="title"> My work</h1>
+          <!-- Quiz -->
           <div class="single-proj">
             <div class="single-hov">
-              <a href=""><button type="button" class="btn-project">Live</button></a>
-              <a href=""><button type="button" class="btn-project">Code</button></a>
+              <div class="project-links">
+                <a href="https://shizz74.github.io/quiz-game2/"><button type="button" class="btn-project">Live</button></a>
+                <a href="https://github.com/Shizz74/quiz-game2"><button type="button" class="btn-project">Code</button></a>
+              </div>
+              <div class="project-text">
+                <h1>Quiz</h1>
+                <p>Game was created in HTML, CSS and JS. One question 4 answers and only one is correct. Question and answer position is random.</p>
+              </div>
             </div>
           </div>
+          <!-- Photograph -->
           <div class="single-proj">
             <div class="single-hov">
-              <a href=""><button type="button" class="btn-project">Live</button></a>
-              <a href=""><button type="button" class="btn-project">Code</button></a>
+              <div class="project-links">
+                <a href="https://shizz74.github.io/photo_website"><button type="button" class="btn-project">Live</button></a>
+                <a href="https://github.com/Shizz74/photo_website"><button type="button" class="btn-project">Code</button></a>
+              </div>
+              <div class="project-text">
+                <h1>One-page website</h1>
+                <p>My first one-page website. It was develop at the beginnign of my days in front-end.  </p>
+              </div>
             </div>
           </div>
+          <!-- Portfolio -->
           <div class="single-proj">
             <div class="single-hov">
-              <a href=""><button type="button" class="btn-project">Live</button></a>
-              <a href=""><button type="button" class="btn-project">Code</button></a>
-            </div>
-          </div>
-          <div class="single-proj">
-            <div class="single-hov">
-              <a href=""><button type="button" class="btn-project">Live</button></a>
-              <a href=""><button type="button" class="btn-project">Code</button></a>
-            </div>
-          </div>
-          <div class="single-proj">
-            <div class="single-hov">
-              <a href=""><button type="button" class="btn-project">Live</button></a>
-              <a href=""><button type="button" class="btn-project">Code</button></a>
-            </div>
-          </div>
-          <div class="single-proj">
-            <div class="single-hov">
-              <a href=""><button type="button" class="btn-project">Live</button></a>
-              <a href=""><button type="button" class="btn-project">Code</button></a>
+              <div class="project-links">
+                <a href="https://github.com/Shizz74/portfolio"><button type="button" class="btn-project">Code</button></a>
+              </div>
+              <div class="project-text">
+                <h1>Portfolio</h1>
+                <p>My own portfolio one-page website. To create I use HTML, CSS and JS without framework. </p>
+              </div>
             </div>
           </div>
         </article>
+      </section>
+      <section class="contact">
+        <header class="section-bg">
+          <p>Contact</p>
+        </header>
+        <form action="https://formspree.io/wojciechbajko@gmail.com" method="POST">
+          <label for="email"> E-mail</label>
+          <input class="email" name="email" type="text">
+          <label for="subject"> Subject</label>
+          <input class="subject" name="subject" type="text">
+          <label for="message"> Message</label>
+          <textarea class="message" name="message" cols="30" rows="10"></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </section>
 
       
 
 
     
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
