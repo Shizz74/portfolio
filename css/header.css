@@ -55,7 +55,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: shake 1s infinite linear;
+
 }
 .circle1{
     animation: shake1 .5s infinite linear;
@@ -81,10 +81,6 @@ article{
 /*Circles----------------------------------*/
     .circle {
         border: .8rem solid green;
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
         animation: none !important;
     }
     .name-circle{
@@ -100,11 +96,7 @@ article{
     .circle-small{
         width: 10vw;
         height: 10vw;
-        border: .3rem solid green;
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
+        border: .5rem solid green;
         animation: none !important;
     }
     .circle1{

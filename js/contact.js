@@ -3,6 +3,9 @@ const subject = document.querySelector(".subject");
 const message = document.querySelector(".message");
 
 
+
+
+
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -18,5 +21,4 @@ form.addEventListener('submit', function(e) {
     else{
         e.preventDefault();
     }
-    this.submit();
 });

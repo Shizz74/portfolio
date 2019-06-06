@@ -12,6 +12,9 @@ html{
     overflow-x: hidden;
     font-family: 'Kodchasan', sans-serif; 
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
     max-width: 1070px;
     margin-left: auto; 
@@ -23,6 +26,10 @@ html{
 .section-bg p{
     height: auto;
     /*font-size: 17rem;*/
+    -moz-color: rgb(0, 0, 0, .05);
+    -webkit-color: rgb(0, 0, 0, .05);
+    -o-color: rgb(0, 0, 0, .05);
+    -ms-color: rgb(0, 0, 0, .05);
     color: rgb(0, 0, 0, .05);
     text-align: center;
 }

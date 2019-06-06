@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/stack.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Port</title>
   </head>
   <body>
@@ -23,10 +24,10 @@
           </div>
           <div class="nav">
                 <ul class="big-menu unvisNormalMenu">
-                    <li><a href="#" class="active">ABOUT</a></li>
-                    <li><a href="#">STACK</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#about" class="active">ABOUT</a></li>
+                    <li><a href="#stack">STACK</a></li>
+                    <li><a href="#proj">PROJECTS</a></li>
+                    <li><a href="#cont">CONTACT</a></li>
                 </ul>
                 <div class="nav-small unvis">
                   <button type="button" class=btn-menu> Menu 
@@ -35,10 +36,10 @@
           </div>
       </nav>
       <ul class="small-menu unvismenu unvis">
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">STACK</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#stack">STACK</a></li>
+        <li><a href="#proj">PROJECTS</a></li>
+        <li><a href="#cont">CONTACT</a></li>
     </ul>
     <header class="portfolio-header">
         <div class="circle name-circle">
@@ -53,7 +54,7 @@
         <div class="circle-small circle4">4</div>
     </header>
     <div class="container">
-      <section class="about">
+      <section id="about" class="about">
         <header class="section-bg">
             <p>ABOUT</p>
         </header>
@@ -62,7 +63,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione molestias eaque eos dolores reprehenderit minima ut accusamus debitis officiis ea saepe velit qui amet fugiat a illo, doloremque iste voluptatibus libero sit ipsam laudantium fuga! Nam iusto soluta recusandae quis mollitia ab laudantium iste, labore, architecto incidunt facilis deserunt maxime quibusdam? Voluptate maxime eaque similique ipsa, fuga voluptatum quam numquam sint est, vitae quia esse consequuntur iusto velit quae libero? Nisi iusto saepe earum ipsum, numquam nulla voluptatum odio culpa neque totam inventore sit quod! Itaque obcaecati sint inventore quod blanditiis! Consequuntur ratione error iste quis exercitationem tenetur id?</p>
         </article>
       </section>
-      <section class="stack">
+      <section id="stack" class="stack">
         <header class="section-bg">
           <p>STACK</p>
         </header>
@@ -105,7 +106,7 @@
               </div>
         </article>
       </section>
-      <section class="project">
+      <section id="proj" class="project">
         <header class="section-bg">
           <p>Projetcs</p>
         </header>
@@ -151,21 +152,38 @@
           </div>
         </article>
       </section>
-      <section class="contact">
+      <section id="cont" class="contact">
         <header class="section-bg">
           <p>Contact</p>
         </header>
         <form action="https://formspree.io/wojciechbajko@gmail.com" method="POST">
           <label for="email"> E-mail</label>
-          <input class="email" name="email" type="text">
+          <input class="email" name="email" type="text" placeholder="E-mail should contain '@' and '.'">
           <label for="subject"> Subject</label>
-          <input class="subject" name="subject" type="text">
+          <input class="subject" name="subject" type="text" placeholder="Subject should contain at least 2 letters">
           <label for="message"> Message</label>
-          <textarea class="message" name="message" cols="30" rows="10"></textarea>
-          <button type="submit">Submit</button>
+          <textarea class="message" name="message" cols="30" rows="10" placeholder="Message should contain at least 10 letters"></textarea>
+          <button class="con-btn" type="submit">Submit</button>
         </form>
       </section>
-
+    </div>
+    <footer>
+      <div class="container">
+        <div class="fot-top">
+          <div class="icons">
+            <a href=""><i class="fab fa-github-square"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="fot-circle">
+            <div class="circle5"></div>
+            <div class="circle6"></div>
+          </div>
+        </div>
+        <div class="fot-bot">
+          Copyrights Wojciech Bajko 2019 &copy;
+        </div>
+      </div>
+    </footer>
       
 
 

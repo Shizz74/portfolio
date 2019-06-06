@@ -2,3 +2,40 @@ form, label{
     display: flex;
     flex-direction: column;
 }
+form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+}
+label{
+    padding-top: .5rem;
+}
+.contact{
+    display: block;
+}
+form input, textarea{
+    border: 1px solid rgb(62, 143, 62);
+    border-radius: 2px;
+    font-size: 1rem;
+}
+form input{
+    height: 1.7rem;
+}
+.con-btn{
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background: rgb(28, 44, 28);
+    width: 50%;
+    padding: .4rem 0;
+    margin: .7rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 700px) {
+    form{
+        width: 90%;
+    }
+}
+
